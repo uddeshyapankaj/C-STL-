@@ -1,0 +1,27 @@
+//stl find function
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int *arr=new int[5]{1,2,3,4,5};
+    int n=5;
+    int key;
+    cin>>key;
+    auto it=find(arr,arr+n,key);
+    int index=it-arr;//difference of two pointers will give index
+    
+    if(index==n)
+    {
+        cout<<"element not found";
+    }
+    else
+    {
+        cout<<"element found"<<" "<<index<<endl;
+    }
+    
+    
+
+    return 0;
+}
